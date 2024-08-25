@@ -4,7 +4,6 @@ from agent import generate_stream, generate_response
 
 st.set_page_config(
     page_title="Recipe-GPT",
-    page_icon="<a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons"></a>",
     menu_items={
         'About': "--"
     }
@@ -24,7 +23,7 @@ if "messages" not in st.session_state:
 # if len(st.session_state.messages) > 1:
 for message in st.session_state.messages:
     if message["role"] == "assistant":     
-        with st.chat_message(name="assistant", avatar="<a href="https://www.flaticon.com/free-icons/chef" title="chef icons"></a>"):
+        with st.chat_message(name="assistant"</a>"):
             st.markdown(message["content"])
     else:
         with st.chat_message(message["role"]):
