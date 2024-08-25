@@ -1,5 +1,5 @@
-# Drug-GPT
-Drug-GPT is an LLM-based chatbot designed to provide general information on drugs\
+# Recipe-GPT
+Recipe-GPT is an LLM-based chatbot designed to provide information on a recipe\
 LINK TO DEMO: *redacted*
 
 ## Instructions to build and run locally
