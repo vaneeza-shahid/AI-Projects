@@ -23,7 +23,7 @@ if "messages" not in st.session_state:
 # if len(st.session_state.messages) > 1:
 for message in st.session_state.messages:
     if message["role"] == "assistant":     
-        with st.chat_message(name="assistant"</a>"):
+        with st.chat_message(name="assistant"):
             st.markdown(message["content"])
     else:
         with st.chat_message(message["role"]):
