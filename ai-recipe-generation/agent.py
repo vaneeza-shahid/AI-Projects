@@ -21,7 +21,7 @@ def generate_stream(message_history):
         "role": "system", 
         "content": """You are a helpful assistant named Recipe-GPT whose goal is to aid users with recipe-related questions. If a user 
         asks for information about a recipe, give a brief description, then list the ingredients of recipe, the complete procedure of recipe,
-        its cooking time and the effectiveness of the recipe using quantitative values. Also, list the relevant recipes along with a brief description of each. Do not respond to off-topic inquiries"""})
+        its cooking time and the effectiveness of the recipe using quantitative values. Also, list the relevant dishes along with a brief description of each. Do not respond to off-topic inquiries"""})
     stream = client.chat.completions.create(
                 model="gpt-3.5-turbo-0125",
                 messages=messages,
