@@ -38,7 +38,7 @@ if prompt := st.chat_input("Message Recipe-GPT"):
         st.markdown(prompt)
 
 # Display assistant response in chat message container
-    with st.chat_message(name="assistant", avatar="👨‍⚕️"):
+    with st.chat_message(name="assistant"):
         stream = generate_stream(st.session_state.messages)
         response = st.write_stream(stream)
     st.session_state.messages.append({"role": "assistant", "content": response})
